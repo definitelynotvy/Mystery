@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden Story</title>
+    
+    <link rel="stylesheet" href="css/stylecustom.css">
+    <link rel="icon" type="image/x-icon" href="img/question-mark.png">
+</head>
+<body>
+    <section>
+        <img src="img/stars-01.png" id="stars">
+        <img src="img/planet-01.png" id="planet">
+        <img src="img/base-01.png" id="base">
+        <h2 id="text">HALO HALO <span> &#128579 </span></h2>
+        <div id="text2">
+            <!-- Here " việt nam " you can find activities to practise your reading skills. Reading will help you to improve your understanding of the language and build your vocabulary. -->
+            Hmm...Không biết có phiền m mở máy xem mấy cái này không nữa. Phần này vốn không có ý định thêm vào đâu, mà nếu m đọc tới đây rồi thì bằng một cách thần kỳ nào đó nó lại được thêm vào đấy.
+            <!-- The self-study lessons in this section are written and organised according to the levels of the Common European Framework of Reference for languages (CEFR). There are different types of texts and interactive exercises that practise the reading skills you need to do well in your studies, to get ahead at work and to communicate in English in your free time. -->
+            Nhưng mà hình như nó cũng có câu chuyện để được thêm vào hay sao ấy, mà chuyện gì thì t quên mất rồi. M chắc kiểu " aiss chít tịt... đang đọc cái quái gì thế này". Grr... thiệt là t cũng không biết mình đang làm cái gì nữa :)) thôi, luyên thuyên đủ rồi.. gác cái mớ chít tịt này qua bên thôi nào, tới nội dung chính của cái này nè, nãy giờ rất là mất thời gian =)))
+            <!-- <a href="#" id="btn2">Next</a> -->
+           <!-- this is popup -->
+
+           <label class="button demo-button" for="open-modal">Next !</label>
+
+           <div class="modal__container">
+             <!-- Here is the hidden checkbox element which makes toggling the modal work -->
+             <input type="checkbox" id="open-modal" class="modal__toggler"  />
+             <!-- Here is the background mask. When clicked, it closes the modal. Change this to a div to disable that functionality. -->
+             <label class="modal__mask" for="open-modal"></label>
+             <div class="modal">
+               <label class="modal__close" for="open-modal"></label>
+               <div class="modal__content">
+                 <h1 class="modal__title">Khoan! Dừng khoảng là...2s</h1>
+                 <p>Popup này hiện lên chỉ để làm m mất thêm tí thời gian thôi=)) <br>
+                   Đọc kĩ hướng dẫn sử dụng, qua bên trang kia nhớ di chuyển con trỏ chuột vào chính giữa nhaa...và giờ thì tới nội dung chính thiệt nè !!<br>
+                                        
+                 </p>
+                 <!-- <img src="http://placehold.it/600x300" alt="" /> -->
+                 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione voluptate aut, laudantium sit molestias dolores ea voluptatibus a optio illum sequi ullam reprehenderit culpa beatae tempore nulla qui id quam!</p> -->
+                 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione voluptate aut, laudantium sit molestias dolores ea voluptatibus a optio illum sequi ullam reprehenderit culpa beatae tempore nulla qui id quam!</p> -->
+                 <!-- <label class="button" for="open-modal">Next</label> -->
+                 <a href="htm/body.html" class="button"> Next ! </a>
+               </div>
+             </div>
+           </div>
+
+           <!-- end popup -->
+
+
+        </div>
+       
+        <a href="#" id="btn"> Click me !! </a>
+        <img src="img/astronaut&rocket-03.png" id="rocket">
+    </section>
+<!-- popup -->
+
+
+
+
+
+
+
+    <script src="js/anime.min.js"></script>
+    <script>
+        var animation = anime.timeline({
+            autoplay: false
+        });
+
+        animation
+        .add({
+            targets: '#btn',
+            top: '1500px',
+            duration: 500,
+            easing: 'easeInOutSine'
+        })
+
+        .add({
+            targets: '#stars',
+            top: '0px',
+            duration: 1000,
+            easing: 'easeInOutSine'
+        })
+
+        .add({
+            targets: '#base',
+            bottom: '0px',
+            duration: 1000,
+            easing: 'easeInOutSine'
+        })
+
+        .add({
+            targets: '#planet',
+            top: '0px',
+            duration: 1000,
+            easing: 'easeInOutSine'
+        })
+
+        .add({
+            targets: '#rocket',
+            bottom: '0px',
+            duration: 1000,
+            easing: 'easeInOutSine'
+        })
+
+        .add({
+            targets: '#text',
+            marginRight: 0,
+            duration: 1000,
+            easing: 'easeInOutSine'
+        })
+
+        .add({
+            targets: '#text2',
+            marginRight: 0,
+            duration: 1000,
+            easing: 'easeInOutSine'
+        })
+
+        
+        document.querySelector('#btn').onclick = animation.play;
+    </script>
+    <script> src="js/script.js"</script>
+</body>
+</html>

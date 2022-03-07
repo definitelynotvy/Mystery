@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle, #300056, #18002B);
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+section img#planet
+{
+    top: -100%;
+}
+section img#stars
+{
+    top: -100%;
+    height: 100%;
+    object-fit: cover;
+}
+section img#rocket
+{
+    bottom: -100%;
+    top: initial;
+    z-index: 1000;
+}
+section img#base
+{
+    bottom: -100%;
+    top: initial;
+    
+}
+/* content */
+div#text2
+{
+    position: absolute;
+    top: 290px;
+    width: 700px;
+    height: 650px;
+    color: #fff;
+    
+    margin-right: -2500px;
+}
+#btn2
+{
+    position: absolute;
+
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 50px;
+    background: #fff;
+    border-radius: 40px;
+    font-size: 1.4em;
+    color: #2b1055;
+    z-index: 10000;
+}
+#text
+{
+    position: absolute;
+    top: 200px;
+    color: #fff;
+    font-size:  8vh;
+    font-weight: 200;
+    margin-right: -2000px;
+}
+#text span
+{
+    font-weight: 700;
+}
+#btn
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 80px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 50px;
+    background: #fff;
+    border-radius: 40px;
+    font-size: 1.4em;
+    color: #2b1055;
+    z-index: 10000;
+}
